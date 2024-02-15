@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* base styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url('../assets/maintile.png'); /* tileable image */
+    background-repeat: repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar styles */
+.navbar {
+    text-align: center;
+    background-color: #333; /* fallback color */
+    background-image: url('../assets/navbar-bg.png'); /* navbar background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 3;
+    font-family: 'Anton', sans-serif;
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s; /* hover effect */
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* content styles */
+.content {
+    padding: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 2;
+    margin-top: 60px; /* space for navbar */
+}
+
+.title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+}
+
+/* section headers */
+.section h2 {
+    padding-top: 50px;
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* about section */
+.section#about p {
+    font-family: 'Anton', sans-serif;
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #aaa;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* download section */
+.section#download p {
+    font-family: 'Anton', sans-serif;
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #aaa;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* extras section */
+.section#extras p {
+    font-family: 'Anton', sans-serif;
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #aaa;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* download button styles */
+#downloadButton {
+    margin-top: 20px;
+    padding: 20px 40px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-image: url('../assets/dl1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    width: 200px; /* fixed width */
+    box-sizing: border-box;
+    display: block;
+}
+
+#downloadButton:hover {
+    transform: scale(1.05);
+}
+
+/* platform select styles */
+#platformSelect {
+    padding: 8px;
+    font-size: 12px;
+    border: 2px solid #ffffff;
+    background-color: #333;
+    color: #ffffff;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 150px;
+    cursor: pointer;
+}
+
+#platformSelect:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+#platformSelect option {
+    background: #000000;
+    color: #ffffff;
+}
+
+
+
+/* parralax image */
+.parallax {
+
+    height: 500px; 
+    background-attachment: local; /* This will scroll the background with the element */
+    background-repeat: no-repeat;
+    background-size: 150% auto; /* zoom level */
+    background-position: center bottom;
+    transition: background-position 0.0s; /* transition for the background position */
+}
+
+
+/* media query for portrait orientation */
+@media (orientation: portrait) {
+    .parallax {
+        background-size: 300% auto;
+    }
+}
