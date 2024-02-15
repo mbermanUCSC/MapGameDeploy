@@ -166,6 +166,6 @@ body, html {
 /* media query for portrait orientation */
 @media (orientation: portrait) {
     .parallax {
-        background-size: 600% auto;
+        background-size: 400% auto;
     }
 }
