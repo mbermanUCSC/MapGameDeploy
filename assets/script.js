@@ -58,4 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setInitialDropdownValue();
     updateDownloadButton();
     platformSelect.addEventListener('change', updateDownloadButton);
+
+    window.scrollTo(0, 1);
 });
