@@ -21,5 +21,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Project Link: [Map Game Repo]([https://github.com/mbermanucsc/MapGameDeploy](https://github.com/FinnDePuy/MapGame)https://github.com/FinnDePuy/MapGame)
+Project Link: [Map Game Repo](https://github.com/FinnDePuy/MapGame)
 
