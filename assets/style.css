@@ -78,6 +78,10 @@ body, html {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
+
+
+
+
 /* download section */
 .section#download p {
     font-family: 'Anton', sans-serif;
@@ -90,17 +94,6 @@ body, html {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* extras section */
-.section#extras p {
-    font-family: 'Anton', sans-serif;
-    text-indent: 2em;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 20px;
-    color: #aaa;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
 
 /* download button styles */
 #downloadButton {
@@ -171,19 +164,19 @@ body, html {
 }
 
 
-/* Slideshow container */
+/* slideshow container */
 .slideshow-container {
   position: relative;
   max-width: 1000px; /* Adjust based on preference */
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
+/* hide the images by default */
+.sceneSlides {
   display: none;
 }
 
-/* Next & previous buttons */
+/* next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -199,18 +192,15 @@ body, html {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 2.5s;
@@ -219,5 +209,36 @@ body, html {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
+
+
+
+/* extras section */
+.section#extras p {
+    font-family: 'Anton', sans-serif;
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #aaa;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+
+.development-history {
+    margin-bottom: 20px;
+}
+
+.development-history img {
+    width: 100%; /* Adjust based on your layout */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.development-history p {
+    text-align: center; /* Centers the caption */
+    margin-top: 8px;
 }
 

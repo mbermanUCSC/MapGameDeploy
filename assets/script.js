@@ -63,33 +63,32 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Slideshow functionality
-let slideIndex = 0; // Current slide index
-let timer = null; // Timer for auto-switching slides
+// scene slideshow functionality
+let slideIndex = 0; 
+let timer = null; 
 
-// Display the first slide and set the timer for auto-switch
 function showSlides() {
     let i;
-    let slides = document.getElementsByClassName("mySlides");
+    let slides = document.getElementsByClassName("sceneSlides");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
-    // Reset the timer
-    clearTimeout(timer);
-    timer = setTimeout(showSlides, 5000); // Change image every 5 seconds
+    
+    clearTimeout(timer); // reset the timer
+    timer = setTimeout(showSlides, 5000); // change image every 5 seconds
 }
 
-// PlusSlides function called by arrow buttons
+
 function plusSlides(n) {
-    slideIndex += n - 1; // Adjust slideIndex according to the arrow direction and immediately show the slide
-    clearTimeout(timer); // Clear existing timer
-    showSlides(); // Show the next slide and reset the timer
+    slideIndex += n - 1;
+    clearTimeout(timer); 
+    showSlides(); 
 }
 
-// Initialize the slideshow when the document is ready
+
 document.addEventListener('DOMContentLoaded', function() {
     showSlides();
 });
