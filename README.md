@@ -21,7 +21,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
-
 Project Link: [Map Game Repo]([https://github.com/mbermanucsc/MapGameDeploy](https://github.com/FinnDePuy/MapGame)https://github.com/FinnDePuy/MapGame)
 
