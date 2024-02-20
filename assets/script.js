@@ -14,6 +14,7 @@ document.addEventListener('scroll', function() {
 
 // set up download section on page load
 document.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo(0, 1);
     var downloadButton = document.querySelector('#downloadButton');
     var platformSelect = document.querySelector('#platformSelect');
     var platform = navigator.platform.toLowerCase();
@@ -59,7 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateDownloadButton();
     platformSelect.addEventListener('change', updateDownloadButton);
 
-    window.scrollTo(0, 1);
 });
 
 
