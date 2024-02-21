@@ -22,5 +22,5 @@ Experience the game by downloading at [Map Game Live](https://mbermanucsc.github
 
 ## Contact
 
-Project Link: [Map Game Repo](https://github.com/FinnDePuy/MapGame)
+
 
