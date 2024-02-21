@@ -15,9 +15,10 @@ Experience the game by downloading at [Map Game Live](https://mbermanucsc.github
 - 
 
 
-## License
+## Credits
+*coded with help from GitHub Copilot!
 
-Distributed under the MIT License. See `LICENSE` for more information.
+
 
 ## Contact
 
