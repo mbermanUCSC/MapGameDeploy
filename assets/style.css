@@ -205,6 +205,12 @@ body, html {
     color: #ffffff;
 }
 
+.gameplay h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: left;
+    margin-bottom: 20px;
+    color : #ffffff;
+}
 
 .gameplay p {
     margin-bottom: 20px;
@@ -225,6 +231,27 @@ body, html {
     padding: 10px;
     margin-bottom: 20px;
 }
+
+/* stylize */
+.gameplay .gameplay-info button {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #883187;
+    color: #ffffff;
+    /* border */
+    border-radius: 5px;
+    border: none;
+}
+
+/* button hover */
+/* scale and shadow */
+.gameplay .gameplay-info button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #682666;
+}
+
 
 /* gameplay info video */
 /* make sure its centered */
