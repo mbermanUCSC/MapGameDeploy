@@ -57,9 +57,14 @@ document.addEventListener('scroll', function() {
     });
 });
 
-// if on mobile, dont load the unity game (in an iframe)
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth > 768) {
+        document.querySelector('.responsive-media').src = 'https://mbermanucsc.github.io/Through-The-Fog/';
+    }
+    else {
         document.querySelector('.game').style.display = 'none';
     }
 });
