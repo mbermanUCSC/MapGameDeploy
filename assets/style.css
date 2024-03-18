@@ -47,6 +47,34 @@ body, html {
     margin-bottom: 20px;
 }
 
+/* .game button */
+.game {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.game:hover {
+    /* scale */
+    transform: scale(1.05);
+}
+
+.game a {
+    display: inline-block; /* Necessary for padding to work on anchor tags */
+    padding: 10px 20px; /* Top & Bottom | Left & Right padding */
+    background-color: #1d2228; /* A nice blue */
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Increase font size */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* No border */
+    cursor: pointer; /* Change mouse cursor to indicate it's clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.game a:hover {
+    background-color: #392b42; /* Darker shade of blue on hover */
+}
+
 /* team styles */
 /* bold title */
 /* center align */

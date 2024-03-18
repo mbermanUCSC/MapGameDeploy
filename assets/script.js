@@ -59,16 +59,6 @@ document.addEventListener('scroll', function() {
 
 
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    if (window.innerWidth > 768) {
-        document.querySelector('.responsive-media').src = 'https://mbermanucsc.github.io/Through-The-Fog/';
-    }
-    else {
-        document.querySelector('.game').style.display = 'none';
-    }
-});
-
 // set up download section on page load
 document.addEventListener('DOMContentLoaded', function() {
     window.scrollTo(0, 1);
