@@ -57,6 +57,12 @@ document.addEventListener('scroll', function() {
     });
 });
 
+// if on mobile, make class iframe in 'game' none
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth < 768) {
+        document.querySelector('.iframe').style.display = 'none';
+    }
+});
 
 // set up download section on page load
 document.addEventListener('DOMContentLoaded', function() {
