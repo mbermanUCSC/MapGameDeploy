@@ -11,31 +11,6 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
-/* navbar styles */
-.navbar {
-    text-align: center;
-    background-color: #333; /* fallback color */
-    background-image: url('../assets/navbar-bg.png'); /* navbar background */
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10px 0;
-    width: 100%;
-    z-index: 3;
-    font-family: 'Anton', sans-serif;
-}
-
-.navbar a {
-    color: #ffffff;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: background-color 0.3s; /* hover effect */
-}
-
-.navbar a:hover {
-    background-color: #555;
-}
-
 /* content styles */
 .content {
     padding: 20px;
@@ -46,107 +21,246 @@ body, html {
     margin-top: 60px; /* space for navbar */
 }
 
+
+
+/* title styles */
 .title {
     text-align: center;
-    margin: 40px 0;
-    font-size: 60px;
-    font-family: 'Anton', sans-serif;
-}
-
-/* section headers */
-.section h2 {
-    padding-top: 50px;
-    font-family: 'Anton', sans-serif;
-    font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #ffffff;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-}
-
-/* about section */
-.section#about p {
-    font-family: 'Anton', sans-serif;
-    text-indent: 2em;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
     margin-bottom: 20px;
-    color: #aaa;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-
-
-
-
-/* download section */
-.section#download p {
-    font-family: 'Anton', sans-serif;
-    text-indent: 2em;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 20px;
-    color: #aaa;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+/* title image */
+/* with top padding and size */
+/* make sure theres padding on the sides */
+.title img {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
-
-/* download button styles */
-#downloadButton {
-    margin-top: 20px;
-    padding: 20px 40px;
-    font-size: 16px;
-    color: #fff;
+/* iframe for game */
+.game iframe {
+    width: 100%;
+    height: 500px;
     border: none;
-    cursor: pointer;
-    background-image: url('../assets/dl1.png');
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-    width: 200px; /* fixed width */
-    box-sizing: border-box;
-    display: block;
+    margin-bottom: 20px;
 }
 
-#downloadButton:hover {
+/* team styles */
+/* bold title */
+/* center align */
+/* margin bottom */
+.team h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color : #ffffff;
+}
+
+/* add border around team section */
+/* add padding around edge of page */
+.team {
+    border: 3px solid #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(214, 19, 211, 0.125);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+/* team member styles */
+/* make sure team members are in a row */
+/* make sure team members are centered */
+/* all font white */
+/* add a small box around each member */
+.team .team-members {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+
+.team .team-member {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 20%;
+}
+
+
+/* Stacking of members for screen resizing */
+@media screen and (max-width: 900px) {
+    .team .team-members {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .team .team-member {
+        width: 100%; /* Make team member items full width */
+        max-width: 300px; /* Limit the maximum width for a better appearance */
+        margin: 10px auto; /* Adjust margin for vertical stacking and center align */
+        padding: 5px; /* Reduce padding to decrease height */
+    }
+
+    .team .team-members img {
+        width: 50%; /* Reduce image width to decrease height, adjust as needed */
+        margin: 0 auto 10px; /* Center image and adjust bottom margin */
+    }
+
+    .team .team-member h3, .team .team-member p {
+        margin: 5px 0; /* Reduce margin around text to decrease section height */
+    }
+}
+
+
+/* hover */
+/* make sure the box is a little darker when hovered */
+/* also scale */
+.team .team-member:hover {
+    background-color: rgba(77, 77, 77, 0.2);
     transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 
-/* platform select styles */
-#platformSelect {
-    padding: 8px;
-    font-size: 12px;
-    border: 2px solid #ffffff;
-    background-color: #333;
+
+/* team member image */
+/* make image small */
+/* make sure were on a "new line" and left aligned */
+.team .team-members img {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* team member name */
+.team .team-members h3 {
+    font-weight: bold;
+    display: inline;
+}
+
+/* team member role */
+.team .team-members p {
+    margin-top: 5px;
+}
+
+
+.team .member-info {
+    color : #ffffff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+
+/* development section */
+.development {
+    border: 3px solid #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(214, 19, 211, 0.125);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #ffffff;
-    border-radius: 5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 150px;
-    cursor: pointer;
 }
 
-#platformSelect:focus {
-    outline: none;
-    border-color: #3498db;
+.development h2 {
+    font-family: 'Anton', sans-serif;
+    text-align: left;
+    margin-bottom: 20px;
+    color : #ffffff;
 }
 
-#platformSelect option {
-    background: #000000;
-    color: #ffffff;
+.development p {
+    margin-bottom: 20px;
+}
+
+.development .dev-info {
+    color : #ffffff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* dev info title */
+.development .dev-info h3 {
+    font-weight: bold;
+    display: inline;
+}
+
+/* dev info list */
+/* add dots */
+.development ul {
+    list-style-type: disc;
+    padding: 10;
+}
+
+/* dev info grid container */
+.development .dev-info .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin-top: 10px;
+}
+
+/* dev info image */
+/* put into grid */
+.development .dev-info img {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: auto;
+    display: grid;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+/* dev image hover */
+/* scale and shadow */
+/* huge shadow */
+.development .dev-info img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 100px rgb(0, 0, 0);
 }
 
 
+
+/* autoplay */
+/* align left */
+/* make sure we dont go out of dev frame */
+.development .dev-info video {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
 /* parralax image */
 .parallax {
-
     height: 500px; 
     background-attachment: local; /* This will scroll the background with the element */
     background-repeat: no-repeat;
@@ -162,83 +276,3 @@ body, html {
         background-size: 400% auto;
     }
 }
-
-
-/* slideshow container */
-.slideshow-container {
-  position: relative;
-  max-width: 1000px; /* Adjust based on preference */
-  margin: auto;
-}
-
-/* hide the images by default */
-.sceneSlides {
-  display: none;
-}
-
-/* next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 2.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-
-
-
-/* extras section */
-.section#extras p {
-    font-family: 'Anton', sans-serif;
-    text-indent: 2em;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 20px;
-    color: #aaa;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
-
-
-.development-history {
-    margin-bottom: 20px;
-}
-
-.development-history img {
-    width: 100%; /* Adjust based on your layout */
-    border-radius: 8px; /* Optional: Adds rounded corners */
-}
-
-.development-history p {
-    text-align: center; /* Centers the caption */
-    margin-top: 8px;
-}
-

@@ -3,100 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Game</title>
+    <title>Through The Fog</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-   
+    <!-- title section -->
+    <div class="title">
+        <!-- centered image -->
+        <img src="assets/title.png" alt="Through The Fog">
 
-    <!-- content -->
-    <div class="content">
+    </div>
 
+    <!-- game section -->
+    <div class="game">
+        <iframe class="responsive-media" src="https://finndepuy.github.io/The-Report/" title="Game Title" allowfullscreen style="border:none;" scrolling="no"></iframe>
+    </div>
+    
+    <script src="assets/script.js"></script>
 
-        <h1 class="title">Map Game</h1>
-
-
-
-        <!-- about section -->
-        <div class="section" id="about">
-            <h2>The Adventure</h2>
-
-            <div class="parallax" style="background-image: url('assets/bg2.png');" data-speed="0.11"></div>
-
-            <p>Looking for a job that's a bit off the beaten path? Literally. We're on the hunt for someone bold enough, or perhaps just sufficiently curious (or crazy), to map out a city that can't sit still. By night, it's an eerie maze where buildings can't sit still. By day? Well, it's still a maze, but slightly less eerie and more... navigable? 
-            When the sun goes down, it's your job to help map the city and help make it livable again. Think of yourself as a cartographic entrepreneur with a flair for the nocturnal and mysterious. You'll be the unsung hero guiding daytime adventurers, citygoers, and probably a few lost pizza delivery folks. So, if you're ready to trade in your desk job, we've got a pen, map, and a flashlight with your name on it.</p>
-        </div>
-
-
-
-
-        
-        <!-- download section -->
-        <div class="section" id="download">
-            <h2>Download</h2>
-            <div class="download-controls">
-                <button id="downloadButton">Download</button>
-                <br>
-                <select id="platformSelect">
-                    <option value="windows">Windows</option>
-                    <option value="mac">Mac</option>
-                    <option value="mobile">Mobile</option>
-                </select>
-                <br>
-                <br>
+    <!-- team section -->
+    <div class="team">
+        <h2>Meet the Team</h2>
+        <div class="team-members">
+            <div class="team-member" data-info="Song Writing, Management, General Programming">
+                <!-- <img src="assets/Abner.png" alt="Abner" width="30%"> -->
+                <!-- more width to this image , 30% in css -->
+                <img src="assets/Abner.png" alt="Abner" >
+                <div>
+                    <h3>Abner Salazar</h3>
+                    <p>Producer</p>
+                </div>
             </div>
-
-            <p>V.0.1 - Beta (2/14/2024)<p>
-            <p>Early release for playtesting and deployment prototype.<p>
-
-            <!-- <div class="parallax" style="background-image: url('assets/bg1.png');" data-speed="0.11"></div> -->
-
-            <div class="slideshow-container" id="gamesceneSlideshow">
-                <!-- Slides -->
-                <div class="sceneSlides fade">
-                    <img src="assets/scene1.png" style="width:100%">
+            <div class="team-member" data-info="Word Design & Layouts, Building Creation, Game Systems, General Programming">
+                <!-- <img src="assets/Abner.png" alt="Abner" width="30%"> -->
+                <!-- more width to this image , 30% in css -->
+                <img src="assets/Finn.png" alt="Abner" >
+                <div>
+                    <h3>Finn Depuy</h3>
+                    <p>Design Lead</p>
                 </div>
-                <div class="sceneSlides fade">
-                    <img src="assets/scene2.png" style="width:100%">
-                </div>
-                <div class="sceneSlides fade">
-                    <img src="assets/scene3.png" style="width:100%">
-                </div>
-                
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-
-        </div>
-
-
-
-
-
-
-        <div class="section" id="extras">
-            <h2>Extras</h2>
-            <p>Take a peek behind the curtain and explore our game's development journey through images and GIFs.</p>
-
-            <!-- Development Image 1 -->
-            <!-- <div class="development-history">
-                <img src="assets/development-image-1.png" alt="Early Concept Art">
-                <p>Early concept art of the main character.</p>
-            </div> -->
-
-            <!-- Development GIF 1 -->
-            <!-- div class="development-history">
-                <img src="assets/dev_gif1.gif" alt="Level Design Process">
-                <p>Early lo-fi prototype of the main mechanic.</p>
-            </div> -->
+            <div class="team-member" data-info="Lead Backend Programming, Unity Lead, Game Systems, General Programming">
+                <!-- <img src="assets/Abner.png" alt="Abner" width="30%"> -->
+                <!-- more width to this image , 30% in css -->
+                <img src="assets/Mark.png" alt="Abner" >
+                <div>
+                    <h3>Marcus Olivas</h3>
+                    <p>Engine Leads</p>
+                </div>
+            </div>
+            <div class="team-member" data-info="Sound & Music Design, Music Systems, Web Deployment, General Programming">
+                <img src="assets/Miles.png" alt="Miles Berman">
+                <div>
+                    <h3>Miles Berman</h3>
+                    <p>Sound Lead</p>
+                </div>
+            </div>
+            <div class="team-member" data-info="Narratives & Dialouges">
+                <!-- <img src="assets/Abner.png" alt="Abner" width="30%"> -->
+                <!-- more width to this image , 30% in css -->
+                <img src="assets/Abner.png" alt="Abner" >
+                <div>
+                    <h3>Lance Dennison</h3>
+                    <p>Narrative Lead</p>
+                </div>
+            </div>
+            <div class="team-member" data-info="Minigame Development, Playtesting, General Programming">
+                <!-- <img src="assets/Abner.png" alt="Abner" width="30%"> -->
+                <!-- more width to this image , 30% in css -->
+                <img src="assets/Jackson.png" alt="Jackson" >
+                <div>
+                    <h3>Jackson Nadler-Block</h3>
+                    <p>Playtesting Lead</p>
+                </div>
+            </div>
+            <div class="team-member" data-info="Minigame Development, UI, General Programming">
+                <!-- <img src="assets/Abner.png" alt="Abner" width="30%"> -->
+                <!-- more width to this image , 30% in css -->
+                <img src="assets/Abner.png" alt="Abner" >
+                <div>
+                    <h3>Michael Takami</h3>
+                    <p>Tools Lead</p>
+                </div>
+            </div>
 
             
         </div>
-
-        
+        <div class="member-info">
+            <p>Click on the images to learn more about the team members</p>
+        </div>
     </div>
 
-    <script src="assets/script.js"></script>
+    <div class = "development">
+        <h2>Development</h2>
+        <div class = 'dev-info'>
+            <p>We developed "Through The Fog" using the Unity game engine. We used the Unity engine to create the game and then exported it to HTML5 to be played in a web browser. The game was developed by a team of 7 students at the University of California, Santa Cruz. The game was developed over the course of 10 weeks as part of a capstone game development class.</p>
+        </div>
+        <div class = 'dev-info'>
+            <h3>Our game was designed under the following externally imposed constraints:</h3>
+            <!-- list -->
+            <p><b>Accessibility:</b></p>
+            <ul>
+                <li>Our game is <b>fully controllable and completable with the use of a single hand</b>, and should be equally enjoyable!</li>
+                <li><b>Colorblind users</b> have also been considered throughout development, and our game has been thurougly tested in various greyscale modes.</li>
+                <li>Players also will enjoy our low-stakes <b>built in rests</b>. This means you can <b>feel free to walk away from the game
+                    at any time, and pick up where you last left off!</b></li>
+            </ul>
+            <p><b>Localization:</b></p>
+            <ul>
+                <li>Currently, our game supports: <b>US English, Japanese.</b></li>
+                <li>Translations are stored in a <b>Unity Localization</b> file.</li>
+                <li>Translates all <b>menus, character dialouge, controls,</b> and all <b>other essential assets.</b></li>
+            </ul>
+            <p><b>Game Format:</b></p>
+            <ul>
+                <li>Our game was developed in <b>Unity 2022.3.10f1</b></li>
+                <li>Our game is <b>exported to HTML5</b> and is <b>playable in a web browser.</b></li>
+                <li>Our game is <b>playable on Windows, Mac, Linux</b></li>
+            </ul>
+        </div>
+        <div class = 'dev-info'>
+            <h3>LOFI Mockup</h3>
+            <video src="assets/LOFIvid.mp4" autoplay loop muted></video>
+            <p><b>Design Questions:</b></p>
+            <ul>
+                <li>What kind of controls would a one handed player feel comfortable with and what do those actions do in the game?</li>
+                <li>How do we allow the player to feel lost without limiting movement?</li>
+                <li>How does the level design and camera positioning assist in the player having trouble navigating</li>
+                <li>How would a player move from one scene to another seamlessly?</li>
+                <li>What different locations are there in the game and how are they connected?</li>
+            </ul>
+            <p><b>Knowledge Gained:</b></p>
+            <ul>
+                <li>A one handed player will have access to the WASD character controls as well as
+                    E for the interact, these keys are close enough to each other that most if not all
+                    players will be able to control at all points.</li>
+                <li>We learned some of the new quirks with the Unity Player Controller, these quirks
+                    left us to deal with orienting the movement to line up with the camera while we
+                    rotated.</li>
+                <li>While creating the map we learned about the importance of deadends and
+                    converging paths, these deadends create a way for the player to get lost in the
+                    level.</li>
+                <li>We also had to learn about how to adjust the map quite a few times so the player
+                    could be naturally lost instead of the map tricking you with moving, this design we
+                    have now allows the player to naturally get lost.
+                    </li>
+                <li>We realized that we needed a more dynamic control scheme based off of the camera
+                    angle instead of just X and Y coordinates because different perspectives would change
+                    the control scheme unintentionally.</li>
+            </ul>
+        </div>
+        <div class = 'dev-info'>
+            <h3>HIFI Prototype</h3>
+            <video src="assets/PROT1vid.mp4" autoplay loop muted></video>
+            <p><b>Design Questions:</b></p>
+            <ul>
+                <li>How can we enhance the game feel by improving assets and adding functionality?</li>
+                <li>What can make the game more engaging and fun?</li>
+                <li>Is our game accessible?</li>
+                <li>What can we do to connect the different systems in our game, especially UI to game world.</li>
+            </ul>
+            <p><b>Knowledge Gained:</b></p>
+            <ul>
+                <li>Adding meaningful transitions between our windows and the game world
+                    allows the player to feel more connected. We also found these transitions
+                were the perfect place to give extra information and tips to the player.</li>
+                <li>Adding a shop to the game world also gave the player a reason to keep exploring the and playing. Adding these upgrades was crucial,
+                    especially when we began considering the game's scalability.</li>
+                <li>Minigames were also a big addition to our gameplay loop, and served many purposes. They were a way to break up the monotony of the game, and also a way to connect
+                    the player to the world. They buildings were directly connected to the minigames, and the buildings were connected to the map.</li>
+                <li>Playtesting was crucial to our development, and we found that the game was not always accessible to all players.
+                    We needed to adjust UIs and asset colors to make the game more visible to colorblind players, and
+                continously tesed with limited mobility was crucial as well.</li>
+        </div>
+
+
+    
+
+        <div class = 'dev-info'>
+            <h3>Polish</h3>
+            <br>
+            <br>
+            <div class = 'dev-info'>
+                <h3>Character Development</h3>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="assets/Sizing1.png" alt="Sizing 1">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Sizing2.png" alt="Sizing 2">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Sizing3.png" alt="Sizing 3">
+                    </div>
+                </div>
+
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="assets/char1.png" alt="Character 1">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/char2.png" alt="Character 2">
+                    </div>
+                </div>
+            </div>
+            <div class = 'dev-info'>
+                <h3>Minigame Development</h3>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="assets/MG2.png" alt="Gameplay Loop">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/MG1.png" alt="Gameplay Loop">
+                    </div>
+                </div>
+            </div>
+            <div class = 'dev-info'>
+                <h3>Map Development</h3>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="assets/Map1.png" alt="Gameplay Loop">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Map2.png" alt="Gameplay Loop">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Map3.png" alt="Gameplay Loop">
+                    </div>
+                </div>
+            </div>
+            <div class = 'dev-info'>
+                <h3>Shop Development</h3>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="assets/Shop1.png" alt="Gameplay Loop">
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/Shop2.png" alt="Gameplay Loop">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
