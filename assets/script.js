@@ -57,10 +57,10 @@ document.addEventListener('scroll', function() {
     });
 });
 
-// if on mobile, make class iframe in 'game' none
+// if on mobile, dont load the unity game (in an iframe)
 document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth < 768) {
-        document.querySelector('.iframe').style.display = 'none';
+        document.querySelector('.game').style.display = 'none';
     }
 });
 
