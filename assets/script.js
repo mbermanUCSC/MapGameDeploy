@@ -42,20 +42,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// make videos only play when visible
-document.addEventListener('scroll', function() {
-    document.querySelectorAll('.video').forEach(function(video) {
-        var videoPosition = video.getBoundingClientRect().top;
-        var videoHeight = video.offsetHeight;
-        var windowPosition = window.innerHeight;
+// // make videos only play when visible
+// document.addEventListener('scroll', function() {
+//     document.querySelectorAll('.video').forEach(function(video) {
+//         var videoPosition = video.getBoundingClientRect().top;
+//         var videoHeight = video.offsetHeight;
+//         var windowPosition = window.innerHeight;
 
-        if (videoPosition < windowPosition && videoPosition + videoHeight > 0) {
-            video.play();
-        } else {
-            video.pause();
-        }
-    });
-});
+//         if (videoPosition < windowPosition && videoPosition + videoHeight > 0) {
+//             video.play();
+//         } else {
+//             video.pause();
+//         }
+//     });
+// });
 
 
 
