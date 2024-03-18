@@ -126,7 +126,7 @@ body, html {
 
 
 /* Stacking of members for screen resizing */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .team .team-members {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
