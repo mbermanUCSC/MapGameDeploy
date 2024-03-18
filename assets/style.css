@@ -164,6 +164,53 @@ body, html {
     padding: 10px;
 }
 
+/* gameplay section */
+.gameplay {
+    border: 3px solid #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(214, 19, 211, 0.125);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+
+.gameplay p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    
+    text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.7);
+    /* cool styling */
+    font-family: 'Anton', sans-serif;
+    font-size: 18px;
+
+}
+
+.gameplay .gameplay-info {
+    color : #ffffff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* gameplay info video */
+/* make sure its centered */
+/* make sure its not big */
+.gameplay .gameplay-info video {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* development section */
 .development {
